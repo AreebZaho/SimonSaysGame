@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to right, #444444, #222222);
+    background: white;
 }
 .main {
     z-index: 0;
@@ -81,10 +81,34 @@ body {
     position: absolute;
     top: 25%;
 }
+#levelUp {
+    display: none;
+    position: absolute;
+    top: 46%;
+    right: 10%;
+}
 .shine {
     opacity: 0.5;
 }
 .bgFlash {
     background: transparent;
     background-color: rgba(255, 0, 0, 0.437);
+}
+.userClick {
+    animation: userClick 75ms ease-in-out;
+}
+@keyframes userClick {
+    50% {
+        transform: scale(0.9);
+    }
+}
+#score {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+#highscore {
+    position: absolute;
+    top: 50%;
+    left: 10%;
 }
